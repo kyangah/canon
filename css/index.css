@@ -1,0 +1,533 @@
+/* 초기화 스타일 CSS */
+
+* { margin: 0; padding: 0; }
+
+body { 
+    color: rgb(255,255,255); 
+    background-color: rgb(0,0,0);
+}
+
+ul { list-style: none; }
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+@font-face { 
+    font-family:'NotoSansKR-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NotoSansKR-Light.otf) format('woff2');
+}
+ 
+@font-face { 
+    font-family:'Manrope' ;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/Manrope-Regular.ttf) format('woff2');
+} 
+
+@font-face { 
+    font-family:'Manrope-ExtraLight' ;
+    font-style: normal;
+    font-weight: 200;
+    src: url(../font/Manrope-ExtraLight.ttf) format('woff2');
+} 
+
+@font-face { 
+    font-family:'Manrope-SemiBold' ;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/Manrope-SemiBold.ttf) format('woff2');
+} 
+ 
+@font-face { 
+    font-family:'Manrope-Bold' ;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/Manrope-Bold.ttf) format('woff2');
+} 
+
+h1 {
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 120px;
+    font-style: normal;
+    letter-spacing: -0.25px;
+}
+  
+h2 {
+    font-family: "NotoSansKR-Light", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    letter-spacing: -0.25px;
+}
+  
+h3 {
+
+}
+  
+p {
+    font-family: "NotoSansKR-Light", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    font-style: normal;
+    letter-spacing: -0.25px;
+    color: rgb(213,213,213);
+}
+
+/* layout */
+.w1780 {
+    width: 1780px;
+}
+
+/* header 스타일 */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: rgb(11,11,11);
+}
+
+#gnb {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#gnb a:link,
+#gnb a:visited,
+#gnb a:active {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+#gnb_right li a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s;
+}
+
+#gnb_left,
+#gnb_right {
+    /* width: 500px; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#gnb_left li:first-child {
+    padding: 0 30px 0 0;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+#gnb_left li:last-child {
+    padding: 0 0 0 30px;
+}
+
+#gnb_right li {
+    padding: 0 30px 0 0;
+    font-family:'Manrope-Bold' ;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+#gnb_right li:last-child {
+    padding: 0;
+}
+
+.gnb_right_button {
+    display: block;
+    width: 26px;
+    height: 29px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gnb_right_button span:first-child{
+    width: 26px; height: 1px;
+    display: block;
+    position: absolute;
+    top: 5px; left: 0;
+    border-top: 3px solid white;
+}
+
+.gnb_right_button span:nth-child(2){
+    width: 22px; height: 1px;
+    display: block;
+    position: absolute;
+    top: 14px; left: 4px;
+    border-top: 3px solid white;
+}
+
+.gnb_right_button span:last-child{
+    width: 26px; height: 1px;
+    display: block;
+    position: absolute;
+    top: 23px; left: 0;
+    border-top: 3px solid white;
+}
+
+/* sec_0 스타일 */
+/* main{
+    width: 100%;
+    height: 100%;
+} */
+
+#sec_0{
+    width: 100%;
+    height: 100%;
+    /* padding: 0 56px; */
+}
+
+.sec_0_wrap {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 220px 0 150px;
+}
+
+.sec_0_wrap figure{
+    width: 100%;
+}
+
+.sec_0_wrap figure img {
+    width: 100%;
+}
+
+/* #sec_0{
+    width: 100%;
+    height: 810px;
+    background: url(../img/20200703135354879124.jpg) no-repeat center;
+    background-size: 1105px 600px;
+    padding: 220px 0 0;
+    margin: 0 auto;
+} */
+
+.sec_0_text {
+    width: 50%; height: 100%;
+    position: absolute;
+    top: 36%; left: 15.5%;
+}
+
+.sec_0_text h1 {
+    margin: 0 0 25px;
+}
+
+.sec_0_text h2 {
+    padding: 0 0 65px;
+}
+
+.sec_0_text a {
+    /* width: 90px;
+    height: 20px; */
+    padding: 17px 80px;
+    border: 1px solid white;
+    font-family:'Manrope-Bold' ;
+    font-size: 14px;
+    line-height: 54px;
+    letter-spacing: -0.25px;
+    color: white;
+}
+
+.sec_0_text a:hover {
+    background: rgb(214, 7, 7);
+    transition: all 0.6s;
+    border: 1px solid rgb(214, 7, 7);
+}
+
+.sec_0_both {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.sec_0_both :first-child{
+    margin: 0 0 0 40px;
+    font-family: "Manrope-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.sec_0_both :last-child{
+    margin: 0 20px 0 0;
+    font-family: "Manrope-Bold", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* .sec_0_scroll{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.sec_0_scroll span{
+    width: 120px;
+    height: 100px;
+    border: 1px solid rgb(255,255,255);
+    margin: 0 35px;
+} */
+
+/* sec_1 스타일 */
+
+#sec_1 {
+    width: 100%;
+    height: 100%;
+}
+
+.sec_1_wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.sec_1_bg{
+    width: 100%;
+    height: 181px;
+    background: url(../img/sec1_bg_bg.jpg) no-repeat center;
+    margin: 300px 0 0 0;
+}
+
+.sec_1_title {
+    width: 100%;
+    height: 181px;
+    background: url(../img/sec1_bg_txt.png) no-repeat center;
+    position: absolute;
+    top: 0; left: 0;
+} 
+
+.sec_1_text_wrap {
+    width: 100%;
+    height: 1094px;
+    padding: 0 0 300px;
+    position: relative;
+}
+
+.sec_1_text_button_l {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%; left: 6%;
+    z-index: 10;
+    color: rgba(255,255,255,0.3);
+    font-family:'Manrope-ExtraLight' ;
+    font-size: 120px;
+    font-weight: 200;
+}
+
+.sec_1_text_button_r {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%; right: 6%;
+    z-index: 10;
+    color: rgba(255,255,255,0.3);
+    font-family:'Manrope-ExtraLight' ;
+    font-size: 120px;
+    font-weight: 200;
+}
+
+.sec_1_text_button_l:hover,
+.sec_1_text_button_r:hover {
+    color: rgb(255,255,255);
+    transition: all 0.6s;
+}
+
+.sec_1_text_1 {
+    width: 100%;
+    height: 100%;
+}
+
+.sec_1_text_1_img_1 {
+    width: 1382px;
+    height: 700px;
+    position: absolute;
+    top: 20%; right: 0;
+}
+
+.sec_1_text_1_img_2 {
+    width: 480px;
+    height: 700px;
+    position: absolute;
+    top: 50%; left: 16%;
+}
+
+.sec_1_text_1 span {
+    display: block;
+}
+
+.sec_1_text_1_li {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 25%; left: 16%;
+}
+
+.sec_1_text_1_li_bottom {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 10%; left: 40%;
+}
+
+.sec_1_text_1_li_num {
+    font-family:'Manrope-SemiBold' ;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    margin: 0 0 10px;
+}
+
+.sec_1_text_1_li_num span {
+    display: inline;
+    color: rgb(255,255,255);
+    font-size: 24px;
+}
+
+.sec_1_text_1_li h1 {
+    margin: 0 0 15px;
+}
+
+
+.sec_1_text_2 {
+    width: 100%;
+    height: 100%;
+}
+
+.sec_1_text_2_img {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 20%; right: 0;
+}
+
+/* sec_2 스타일 */
+
+#sec_2 {
+    width: 100%;
+    height: 100%;
+}
+
+.sec_2_wrap {
+    width: 1250px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding: 210px 0 0;
+}
+
+.sec_2_wrap span {
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 2px;
+    position: absolute;
+    top: 20%; left: 49%;
+}
+
+.sec_2_wrap_title {
+    width: 93%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 50px;
+    margin: 0 auto;
+}
+
+.sec_2_wrap_title li {
+    font-family: "Manrope-Bold", sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.sec_2_wrap_title li a {
+    color: rgb(213,213,213);
+}
+
+.sec_2_wrap_img {
+    width: 1250px;
+    height: 1430px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sec_2_wrap_bg {
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+}
+
+.sec_2_wrap_camera {
+    width: 620px;
+    height: 620px;
+    position: absolute;
+    top: 21%; left: 24%;
+}
+
+.sec_2_wrap_img p {
+    position: absolute;
+    top: 48%; right: 7%;
+}
+
+.sec_2_wrap_button {
+    padding: 1px 80px;
+    border: 1px solid white;
+    font-family:'Manrope-Bold' ;
+    font-size: 14px;
+    line-height: 54px;
+    letter-spacing: -0.25px;
+    color: white;
+    position: absolute;
+    top: 72%; left: 40%;
+}
+
+.sec_2_wrap_button:hover {
+    background: rgb(214, 7, 7);
+    transition: all 0.6s;
+    border: 1px solid rgb(214, 7, 7);
+} 
+
+/* .sec_0_text a {
+    padding: 17px 80px;
+    border: 1px solid white;
+    font-family:'Manrope-Bold' ;
+    font-size: 14px;
+    line-height: 54px;
+    letter-spacing: -0.25px;
+    color: white;
+}
+
+.sec_0_text a:hover {
+    background: rgb(214, 7, 7);
+    transition: all 0.6s;
+    border: 1px solid rgb(214, 7, 7);
+} */
+
+
+
+/* Tablet 해상도 */
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+
+}
+
+/* Mobile 해상도 */
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+
+}
