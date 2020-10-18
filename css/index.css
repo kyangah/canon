@@ -222,7 +222,7 @@ header {
 }
 
 .sec_0_text {
-    width: 50%; height: 100%;
+    width: 80%; height: 100%;
     position: absolute;
     top: 36%; left: 15.5%;
 }
@@ -263,13 +263,13 @@ header {
 }
 
 .sec_0_both :first-child{
-    margin: 0 0 0 40px;
+    margin: 0 0 0 80px;
     font-family: "Manrope-Bold", sans-serif;
     color: rgb(255, 255, 255);
 }
 
 .sec_0_both :last-child{
-    margin: 0 20px 0 0;
+    margin: 0 35px 0 0;
     font-family: "Manrope-Bold", sans-serif;
     color: rgb(255, 255, 255);
 }
