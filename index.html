@@ -48,7 +48,7 @@
                     <li><a href="">LOGIN</a></li>
                     <li><a href="">SIGN UP</a></li>
                 </ul>
-                <li class="gnb_m_button"><img src="img/btn_header_pop_close_m.png"></li>
+                <li class="gnb_m_button" onclick="gnbClose();"><img src="img/btn_header_pop_close_m.png"></li>
             </div>
             
             <ul class="gnb_m_gnb_title">
@@ -57,12 +57,27 @@
                 <li><a href="">e 스토어</a></li>
                 <li><a href="">고객지원</a></li>
             </ul>
-            <ul class="gnb_m_content">
-                <li>RTIST</li>
-                <li>R SYSTEM</li>
-                <li>R MAGAZINE</li>
-                <li>R EVENT</li>
-                <li>R GALLERY</li>
+            <ul class="gnb_m_main">
+                <h3 class="gnb_m_main_3" onclick="accordionOpen(0)">RTIST</h3>
+                    <li class="gnb_m_content"><span>RTIST</span><br>
+                        EOS R system과 함께하는 프로작가<br>
+                        <span>RTIST STORY</span><br>
+                        EOS R system과 Rtist가 함께 연출하는 이야기</li>
+                <h3 class="gnb_m_main_3" onclick="accordionOpen(1)">R SYSTEM</h3>
+                    <li class="gnb_m_content"><span>R SERIES</span><br>
+                        카메라 제품 소개<br>
+                        <span>RF LENS</span><br>
+                        렌즈 제품 소개</li>
+                <h3 class="gnb_m_main_3" onclick="accordionOpen(2)">R MAGAZINE</h3>
+                        <li class="gnb_m_content font_15_24">REVIEW / INTERVIEW<br>
+                        NEWS<br>
+                        AD</li>
+                <h3 class="gnb_m_main_3" onclick="accordionOpen(3)">R EVENT</h3>
+                        <li class="gnb_m_content font_15_24">EVENT<br>
+                        NOTICE</li>
+                <h3 class="gnb_m_main_3" onclick="accordionOpen(4)">R GALLERY</h3>
+                        <li class="gnb_m_content font_15_24">R GALLERY<br>
+                        R CLUBGALLERY</li>
             </ul>
             <ul class="gnb_m_sns">
                 <li><a href="">FACEBOOK</a></li>
@@ -317,11 +332,65 @@
            }
            else {
               document.getElementById("gnb_m_wrap")
-              .style = "height:44px; background:rgba(0,0,0,0.8);";
+              .style = "height:80px; background:rgba(0,0,0,0.8);";
   
               gnbOpenState = 0;
            }
   
+        }
+
+        var gnbCloseState = 0;
+
+        function gnbClose() {
+  
+  
+            if (gnbCloseState == 0) {
+                document.getElementById("gnb")
+                .style = "display:block; width:100%; padding:0 20px";
+                document.getElementById("gnb_right_m")
+                .style = "display:block; width:100%; padding:0 20px";
+
+                document.getElementById("gnb_m_wrap")
+              .style = "display:none";
+
+                gnbCloseState = 1;
+            }
+            else {
+                document.getElementById("gnb_m_wrap")
+                .style = "height:0px; background:rgba(0,0,0,0.8);";
+
+                gnbCloseState = 0;
+            }
+
+            }
+
+        var accOpenState = [ 0, 0, 0 ];
+        console.log (accOpenState[1]) ;
+
+        function accordionOpen(contentNumber) { 
+
+            for ( i=0; i < 5; i=i+1 ) {
+            document.getElementsByClassName("gnb_m_content")[i].style = "height:0; padding: 0; opacity: 0;" ;
+            document.getElementsByClassName("gnb_m_main_3")[i].style = "color: rgb(47,47,47);";
+
+            if (accOpenState[contentNumber] == 0) {
+            accOpenState[i] = 0;
+            }
+            }
+
+            if ( accOpenState[contentNumber] == 0 ) {
+            document.getElementsByClassName("gnb_m_content")[contentNumber].style = "height:auto; padding: 20px 40px; opacity: 1;";
+            document.getElementsByClassName("gnb_m_main_3")[contentNumber].style = "color: rgb(239,239,239);";
+
+            accOpenState[contentNumber] = 1;
+        }
+            else {
+                document.getElementsByClassName("gnb_m_content")[contentNumber].style = "height:0; padding: 0; opacity: 0;" ;
+                document.getElementsByClassName("gnb_m_main_3")[contentNumber].style = "color: rgb(47,47,47);";
+
+                accOpenState[contentNumber] = 0;
+            }
+
         }
   
      </script>
