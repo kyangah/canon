@@ -146,6 +146,12 @@ header {
     padding: 0;
 }
 
+/* gnb_menu 스타일 */
+
+#gnb_m_wrap {
+    display: none;
+}
+
 
 /* sec_0 스타일 */
 
@@ -1181,6 +1187,140 @@ footer {
         padding: 0 30px 0 0;
     }
 
+    /* gnb_m 스타일 */
+
+    #gnb_m_wrap {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #gnb_m {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .gnb_m_gnb {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        margin: 0 0 0 20px;
+    }
+    
+    .gnb_m_gnb img {
+        width: 60px;
+        height: auto;
+    }
+    
+    .gnb_m_gnb li {
+        padding: 0 30px 0 0;
+    }
+    
+    .gnb_m_button img {
+        width: 21px;
+        height: 21px;
+        margin: 0 20px 0 0;
+        cursor: pointer;
+    }
+    
+    #gnb_m li { list-style: none;}
+    
+    .gnb_m_gnb_title {
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        padding: 0 85px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .gnb_m_gnb_title li {
+        font-family: "Manrope-Bold", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        font-style: normal;
+        letter-spacing: -0.6px;
+    }
+    
+    .gnb_m_main {
+        width: 100%;
+        height: auto;
+        padding: 0 85px;
+    }
+    
+    .gnb_m_main h3 {
+        font-family: "Manrope-Bold", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        padding: 20px 0 ;
+        color: rgb(47,47,47);
+    }
+
+    .gnb_m_content {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        font-family: "Manrope-Light", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 26px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        color: rgb(153,153,153);
+    }
+
+    .gnb_m_content span {
+        font-family: "Manrope-Light", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        color: rgb(255,255,255);
+    }
+
+    .font_15_24 {
+        font-family: "Manrope-Light", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        color: rgb(255,255,255);
+    }
+    
+    
+    .gnb_m_sns {
+        width: 100%;
+        height: auto;
+        padding: 50px 85px 0;
+        text-align: right;
+    }
+    
+    .gnb_m_sns li {
+        font-family: "NotoSansKR-Regular", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 15px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        padding: 10px 0;
+    }
+    
+    #gnb_m_wrap a {
+        color: rgb(255, 255, 255);
+    }
+
     /* sec_0 스타일 */
 
     #sec_0{ padding: 0 60px; }
@@ -1720,7 +1860,144 @@ footer {
         padding: 0 30px 0 0;
     }
 
+    /* gnb_m 스타일 */
 
+    #gnb_m_wrap {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #gnb_m {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .gnb_m_gnb {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        margin: 0 0 0 20px;
+    }
+    
+    .gnb_m_gnb img {
+        width: 60px;
+        height: auto;
+    }
+    
+    .gnb_m_gnb li {
+        padding: 0 30px 0 0;
+    }
+    
+    .gnb_m_button img {
+        width: 21px;
+        height: 21px;
+        margin: 0 20px 0 0;
+        cursor: pointer;
+    }
+    
+    #gnb_m li { list-style: none;}
+    
+    .gnb_m_gnb_title {
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        padding: 0 85px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .gnb_m_gnb_title li {
+        font-family: "Manrope-Bold", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        font-style: normal;
+        letter-spacing: -0.6px;
+    }
+    
+    .gnb_m_main {
+        width: 100%;
+        height: auto;
+        padding: 0 85px;
+    }
+    
+    .gnb_m_main h3 {
+        font-family: "Manrope-Bold", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        padding: 20px 0 ;
+        color: rgb(47,47,47);
+    }
+
+    .gnb_m_content {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        font-family: "Manrope-Light", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 26px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        color: rgb(153,153,153);
+    }
+
+    .gnb_m_content span {
+        font-family: "Manrope-Light", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        color: rgb(255,255,255);
+    }
+
+    .font_15_24 {
+        font-family: "Manrope-Light", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        color: rgb(255,255,255);
+    }
+    
+    
+    .gnb_m_sns {
+        width: 100%;
+        height: auto;
+        padding: 50px 85px 0;
+        text-align: right;
+    }
+    
+    .gnb_m_sns li {
+        font-family: "NotoSansKR-Regular", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 15px;
+        font-style: normal;
+        letter-spacing: -0.25px;
+        padding: 10px 0;
+    }
+    
+    #gnb_m_wrap a {
+        color: rgb(255, 255, 255);
+    }
+
+    
+
+
+    /* sec_0 스타일 */
     #sec_0{ padding: 0 60px; }
 
 
