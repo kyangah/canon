@@ -37,9 +37,44 @@
             </ul>
             <ul id="gnb_right_m">
                 <li><a href=""><img src="img/btn_home.png"></a></li>
-                <li><a href=""><img src="img/btn_hamburger1_m.png"></a></li>
+                <li><a href="#" id="gnb_right_m" onclick="gnbOn();"><img src="img/btn_hamburger1_m.png"></a></li>
             </ul>
         </nav>
+
+        <nav id="gnb_m_wrap">
+            <div id="gnb_m">
+                <ul class="gnb_m_gnb">
+                    <li><a href=""><img src="img/logo.png"></a></li>
+                    <li><a href="">LOGIN</a></li>
+                    <li><a href="">SIGN UP</a></li>
+                </ul>
+                <li class="gnb_m_button"><img src="img/btn_header_pop_close_m.png"></li>
+            </div>
+            
+            <ul class="gnb_m_gnb_title">
+                <li><a href="">R CLUB</a></li>
+                <li><a href="">정품등록</a></li>
+                <li><a href="">e 스토어</a></li>
+                <li><a href="">고객지원</a></li>
+            </ul>
+            <ul class="gnb_m_content">
+                <li>RTIST</li>
+                <li>R SYSTEM</li>
+                <li>R MAGAZINE</li>
+                <li>R EVENT</li>
+                <li>R GALLERY</li>
+            </ul>
+            <ul class="gnb_m_sns">
+                <li><a href="">FACEBOOK</a></li>
+                <li><a href="">YOUTUBE</a></li>
+                <li><a href="">INSTAGRAM</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">KAKAOSTORY</a></li>
+                <li><a href="">TWITTER</a></li>
+            </ul>
+        </nav>
+
+
     </header>
     <main>
         <section id="sec_0">
@@ -259,6 +294,37 @@
         </div>
 
     </footer>
+
+    <script>
+
+        var gnbOpenState = 0;
+  
+        function gnbOn() {
+  
+  
+           if (gnbOpenState == 0) {
+              document.getElementById("gnb_m_wrap")
+              .style = "display:block; height:1200px; background:rgba(0,0,0,1);";
+
+              document.getElementById("gnb")
+              .style = "display:none";
+              document.getElementById("sec_0_both")
+              .style = "display:none";
+              document.getElementById("sec_0_scroll")
+              .style = "display:none";
+
+              gnbOpenState = 1;
+           }
+           else {
+              document.getElementById("gnb_m_wrap")
+              .style = "height:44px; background:rgba(0,0,0,0.8);";
+  
+              gnbOpenState = 0;
+           }
+  
+        }
+  
+     </script>
 
 
 </body>
