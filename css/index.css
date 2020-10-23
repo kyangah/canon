@@ -164,7 +164,7 @@ header {
     width:100%;
     height: 100%;
     margin: 0 auto;
-    padding: 200px 0 150px;
+    padding: 170px 0 150px;
 }
 
 .sec_0_wrap figure{
@@ -923,6 +923,13 @@ footer {
 
     #sec_0{ padding: 0 80px; }
 
+    .sec_0_wrap {
+        width:100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 170px 0 150px;
+    }
+
     .sec_0_wrap figure{
         width: 83%;
         background-size: cover;
@@ -1324,6 +1331,13 @@ footer {
     /* sec_0 스타일 */
 
     #sec_0{ padding: 0 60px; }
+
+    .sec_0_wrap {
+        width:100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 150px 0 150px;
+    }
 
 
     .sec_0_wrap figure{
@@ -1999,6 +2013,13 @@ footer {
 
     /* sec_0 스타일 */
     #sec_0{ padding: 0 60px; }
+
+    .sec_0_wrap {
+        width:100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 150px 0 150px;
+    }
 
 
     .sec_0_wrap figure{
