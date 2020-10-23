@@ -346,18 +346,20 @@
   
             if (gnbCloseState == 0) {
                 document.getElementById("gnb")
-                .style = "display:block; width:100%; padding:0 20px";
+                .style = "display:block; width: calc(100% - 60px); display:flex;";
                 document.getElementById("gnb_right_m")
-                .style = "display:block; width:100%; padding:0 20px";
+                .style = "display:block; display:flex; text-align:right;";
 
                 document.getElementById("gnb_m_wrap")
+              .style = "display:none";
+              document.getElementById("gnb_right")
               .style = "display:none";
 
                 gnbCloseState = 1;
             }
             else {
                 document.getElementById("gnb_m_wrap")
-                .style = "height:0px; background:rgba(0,0,0,0.8);";
+                .style = "height:1200px;";
 
                 gnbCloseState = 0;
             }
